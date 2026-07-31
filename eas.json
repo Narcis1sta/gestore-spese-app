@@ -1,6 +1,1 @@
-{
-  "build": {
-    "preview": {"distribution":"internal", "android":{"buildType":"apk"}},
-    "production": {"android":{"buildType":"app-bundle"}}
-  }
-}
+ewogICJidWlsZCI6IHsKICAgICJwcmV2aWV3IjogeyJkaXN0cmlidXRpb24iOiJpbnRlcm5hbCIsICJhbmRyb2lkIjp7ImJ1aWxkVHlwZSI6ImFwayJ9fSwKICAgICJwcm9kdWN0aW9uIjogeyJhbmRyb2lkIjp7ImJ1aWxkVHlwZSI6ImFwcC1idW5kbGUifX0KICB9Cn0K
