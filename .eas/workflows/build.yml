@@ -16,3 +16,7 @@ jobs:
     params:
       platform: android
       profile: preview
+    hooks:
+      before_install_node_modules:
+        - name: Sincronizza package lock
+          run: npm install --package-lock-only --legacy-peer-deps
