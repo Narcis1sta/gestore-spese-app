@@ -1,2 +1,24 @@
-import {Tabs} from 'expo-router'; import {Ionicons} from '@expo/vector-icons'; import {useSafeAreaInsets} from 'react-native-safe-area-context'; import {theme} from '../../src/ui';
-export default function Layout(){const insets=useSafeAreaInsets();return <Tabs screenOptions={{headerShown:false,tabBarActiveTintColor:theme.accent,tabBarInactiveTintColor:'#8991A3',tabBarStyle:{height:68+insets.bottom,paddingBottom:10+insets.bottom,paddingTop:8},tabBarLabelStyle:{fontWeight:'700'}}}><Tabs.Screen name="index" options={{title:'Home',tabBarIcon:({color,size})=><Ionicons name="home" color={color} size={size}/>}}/><Tabs.Screen name="movimenti" options={{title:'Movimenti',tabBarIcon:({color,size})=><Ionicons name="list" color={color} size={size}/>}}/><Tabs.Screen name="statistiche" options={{title:'Statistiche',tabBarIcon:({color,size})=><Ionicons name="pie-chart" color={color} size={size}/>}}/><Tabs.Screen name="impostazioni" options={{title:'Impostazioni',tabBarIcon:({color,size})=><Ionicons name="settings" color={color} size={size}/>}}/></Tabs>}
+import {Tabs} from 'expo-router';
+import {Ionicons} from '@expo/vector-icons';
+import {Platform} from 'react-native';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import {theme} from '../../src/ui';
+
+export default function Layout() {
+  const insets = useSafeAreaInsets();
+  const bottomInset = Platform.OS === 'android' ? Math.max(insets.bottom, 24) : insets.bottom;
+  return (
+    <Tabs screenOptions={{
+      headerShown: false,
+      tabBarActiveTintColor: theme.accent,
+      tabBarInactiveTintColor: '#8991A3',
+      tabBarStyle: {height: 72, marginBottom: bottomInset, paddingBottom: 8, paddingTop: 8, backgroundColor: '#FFFFFF'},
+      tabBarLabelStyle: {fontWeight: '700'},
+    }}>
+      <Tabs.Screen name="index" options={{title:'Home', tabBarIcon:({color,size})=><Ionicons name="home" color={color} size={size}/>}}/>
+      <Tabs.Screen name="movimenti" options={{title:'Movimenti', tabBarIcon:({color,size})=><Ionicons name="list" color={color} size={size}/>}}/>
+      <Tabs.Screen name="statistiche" options={{title:'Statistiche', tabBarIcon:({color,size})=><Ionicons name="pie-chart" color={color} size={size}/>}}/>
+      <Tabs.Screen name="impostazioni" options={{title:'Impostazioni', tabBarIcon:({color,size})=><Ionicons name="settings" color={color} size={size}/>}}/>
+    </Tabs>
+  );
+}
