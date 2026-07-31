@@ -1,12 +1,1 @@
-name: Build APK Gestore Spese
-
-on:
-  workflow_dispatch:
-
-jobs:
-  build_android:
-    name: Genera APK Android
-    type: build
-    params:
-      platform: android
-      profile: preview
+bmFtZTogQnVpbGQgQVBLIEdlc3RvcmUgU3Blc2UKCm9uOgogIHdvcmtmbG93X2Rpc3BhdGNoOiB7fQoKam9iczoKICBidWlsZF9hbmRyb2lkOgogICAgbmFtZTogR2VuZXJhIEFQSyBBbmRyb2lkCiAgICB0eXBlOiBidWlsZAogICAgcGFyYW1zOgogICAgICBwbGF0Zm9ybTogYW5kcm9pZAogICAgICBwcm9maWxlOiBwcmV2aWV3Cg==
