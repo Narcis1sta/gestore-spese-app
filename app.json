@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Gestore Spese",
-    "slug": "gestore-spese",
+    "slug": "narci",
     "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
