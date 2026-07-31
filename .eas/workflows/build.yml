@@ -1,1 +1,18 @@
-bmFtZTogQnVpbGQgQVBLIEdlc3RvcmUgU3Blc2UKCm9uOgogIHdvcmtmbG93X2Rpc3BhdGNoOgogICAgaW5wdXRzOgogICAgICB0cmlnZ2VyOgogICAgICAgIHR5cGU6IHN0cmluZwogICAgICAgIHJlcXVpcmVkOiBmYWxzZQogICAgICAgIGRlc2NyaXB0aW9uOiBBdnZpbyBtYW51YWxlIGRlbGxhIGJ1aWxkIEFQSwogICAgICAgIGRlZmF1bHQ6IG1hbnVhbAoKam9iczoKICBidWlsZF9hbmRyb2lkOgogICAgbmFtZTogR2VuZXJhIEFQSyBBbmRyb2lkCiAgICB0eXBlOiBidWlsZAogICAgcGFyYW1zOgogICAgICBwbGF0Zm9ybTogYW5kcm9pZAogICAgICBwcm9maWxlOiBwcmV2aWV3Cg==
+name: Build APK Gestore Spese
+
+on:
+  workflow_dispatch:
+    inputs:
+      trigger:
+        type: string
+        required: false
+        description: Avvio manuale della build APK
+        default: manual
+
+jobs:
+  build_android:
+    name: Genera APK Android
+    type: build
+    params:
+      platform: android
+      profile: preview

@@ -1,1 +1,35 @@
-ewogICJuYW1lIjogImdlc3RvcmUtc3Blc2UiLAogICJ2ZXJzaW9uIjogIjEuMS4wIiwKICAicHJpdmF0ZSI6IHRydWUsCiAgIm1haW4iOiAiZXhwby1yb3V0ZXIvZW50cnkiLAogICJzY3JpcHRzIjogewogICAgInN0YXJ0IjogImV4cG8gc3RhcnQiLAogICAgImFuZHJvaWQiOiAiZXhwbyBydW46YW5kcm9pZCIsCiAgICAidHlwZWNoZWNrIjogInRzYyAtLW5vRW1pdCIKICB9LAogICJkZXBlbmRlbmNpZXMiOiB7CiAgICAiQGV4cG8vdmVjdG9yLWljb25zIjogIl4xNS4wLjMiLAogICAgIkByZWFjdC1uYXRpdmUtY29tbXVuaXR5L2RhdGV0aW1lcGlja2VyIjogIjguNC40IiwKICAgICJAcmVhY3QtbmF0aXZlLXBpY2tlci9waWNrZXIiOiAiMi4xMS4xIiwKICAgICJleHBvIjogIn41NC4wLjAiLAogICAgImV4cG8tY29uc3RhbnRzIjogIn4xOC4wLjEzIiwKICAgICJleHBvLWZpbGUtc3lzdGVtIjogIn4xOS4wLjE3IiwKICAgICJleHBvLWZvbnQiOiAifjE0LjAuMTIiLAogICAgImV4cG8tbGlua2luZyI6ICJ+OC4wLjEyIiwKICAgICJleHBvLXJvdXRlciI6ICJ+Ni4wLjAiLAogICAgImV4cG8tc2hhcmluZyI6ICJ+MTQuMC43IiwKICAgICJleHBvLXNxbGl0ZSI6ICJ+MTYuMC44IiwKICAgICJleHBvLXN0YXR1cy1iYXIiOiAifjMuMC44IiwKICAgICJyZWFjdCI6ICIxOS4xLjAiLAogICAgInJlYWN0LW5hdGl2ZSI6ICIwLjgxLjUiLAogICAgInJlYWN0LW5hdGl2ZS1jaGFydC1raXQiOiAiXjYuMTIuMCIsCiAgICAicmVhY3QtbmF0aXZlLXNhZmUtYXJlYS1jb250ZXh0IjogIn41LjYuMCIsCiAgICAicmVhY3QtbmF0aXZlLXNjcmVlbnMiOiAifjQuMTYuMCIsCiAgICAicmVhY3QtbmF0aXZlLXN2ZyI6ICIxNS4xMi4xIgogIH0sCiAgImRldkRlcGVuZGVuY2llcyI6IHsKICAgICJAdHlwZXMvcmVhY3QiOiAifjE5LjEuMTAiLAogICAgInR5cGVzY3JpcHQiOiAifjUuOS4yIgogIH0KfQo=
+{
+  "name": "gestore-spese",
+  "version": "1.1.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^15.0.3",
+    "@react-native-community/datetimepicker": "8.4.4",
+    "@react-native-picker/picker": "2.11.1",
+    "expo": "~54.0.0",
+    "expo-constants": "~18.0.13",
+    "expo-file-system": "~19.0.17",
+    "expo-font": "~14.0.12",
+    "expo-linking": "~8.0.12",
+    "expo-router": "~6.0.0",
+    "expo-sharing": "~14.0.7",
+    "expo-sqlite": "~16.0.8",
+    "expo-status-bar": "~3.0.8",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-chart-kit": "^6.12.0",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
+    "react-native-svg": "15.12.1"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.10",
+    "typescript": "~5.9.2"
+  }
+}
